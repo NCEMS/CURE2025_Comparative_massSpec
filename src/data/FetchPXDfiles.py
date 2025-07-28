@@ -63,6 +63,6 @@ PXD = sys.argv[1]
 outdir = sys.argv[2]
 print(f'Downloading PXD {PXD}')
 print(f'Output directory: {outdir}')
-download_pride_files(PXD, file_type=".raw", output_dir=outdir)
-#download_pride_files(PXD, file_type="", output_dir=outdir)
+# download_pride_files(PXD, file_type=".raw", output_dir=outdir)
+download_pride_files(PXD, file_type="", output_dir=outdir)
 
