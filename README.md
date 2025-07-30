@@ -1,17 +1,14 @@
 # CURE2025_Comparative_massSpec
 
-## Fetching PXD data files
-Here's a complete documentation page for your **PRIDE dataset fetch script**, suitable for a README or internal workflow guide.
-
 ---
 
-# 🧬 PRIDE PXD File Fetcher
+## 🧬 PRIDE PXD File Fetcher
 
 This Python script allows you to automatically download mass spectrometry data files from the [PRIDE Archive](https://www.ebi.ac.uk/pride/) using a **PXD accession ID**. It retrieves file metadata from PRIDE's REST API and downloads selected files via **FTP using `wget`**.
 
 ---
 
-## 📦 Features
+### 📦 Features
 
 * Automatically queries PRIDE Archive for files associated with a PXD ID
 * Supports optional filtering by file type (e.g. `.mgf`, `.raw`, `.mzML`)
@@ -20,9 +17,9 @@ This Python script allows you to automatically download mass spectrometry data f
 
 ---
 
-## 🚀 How to Use
+### 🚀 How to Use
 
-### 1. **Basic Command**
+#### 1. **Basic Command**
 
 ```bash
 python fetch_pride_files.py PXD003037 output_directory
@@ -36,7 +33,7 @@ This will:
 
 ---
 
-## 🛠️ Dependencies
+### 🛠️ Dependencies
 
 * Python ≥ 3.6
 * Requires the following Python modules:
@@ -59,7 +56,7 @@ Install `wget` on Ubuntu/Debian:
 sudo apt install wget
 ```
 ---
-## 🧠 Notes and Caveats
+### 🧠 Notes and Caveats
 
 * Some files may not have FTP download locations (e.g., restricted or private datasets).
 * The script uses `wget` for robustness (supports resume and large files), but could be adapted to use `urllib`, `requests`, or `aria2c`.
