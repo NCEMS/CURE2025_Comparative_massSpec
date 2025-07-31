@@ -23,7 +23,7 @@
     },
     "max_variable_mods": 2,
     "decoy_tag": "rev_",
-    "generate_decoys": false, 
+    "generate_decoys": true, 
     "fasta": "/home/jovyan/data-store/CURE2025_Comparative_massSpec/taxid-9606_uniprot-reviewed.fasta"
   },
 

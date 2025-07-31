@@ -21,17 +21,17 @@
     },
     "max_variable_mods": 2,
     "decoy_tag": "rev_",
-    "generate_decoys": false, 
+    "generate_decoys": true, 
     "fasta": "/home/jovyan/data-store/CURE2025_Comparative_massSpec/taxid-3847_uniprot-reviewed.fasta"
   },
 
   "quant": {
-    "tmt": null,
+    "tmt": "null",
     "tmt_settings": {
       "level": 2,
-      "sn": false
+      "sn": "false"
     },
-    "lfq": true,
+    "lfq": "true",
     "lfq_settings": {
       "peak_scoring": "Hybrid",
       "integration": "Sum",
@@ -61,10 +61,10 @@
   "min_matched_peaks": 6,
   "max_fragment_charge": 1,
   "report_psms": 1,
-  "mzml_paths": ["/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP1.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP2.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_HP3.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP3.mzML",
+  "mzml_paths": ["/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP2.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_HP1.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_HP2.mzML"]
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_HP2.mzML",
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_HP3.mzML",
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP1.mzML",
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD023343/Soybean_LPBiomaker_LP3.mzML"]
 }
