@@ -2,7 +2,7 @@
   "database": {
     "bucket_size": 32768,
     "enzyme": {
-      "missed_cleavages": 2,
+      "missed_cleavages": 1,
       "min_len": 5,
       "max_len": 50,
       "cleave_at": "KR",       
@@ -24,7 +24,7 @@
     "max_variable_mods": 2,
     "decoy_tag": "rev_",
     "generate_decoys": true, 
-    "fasta": "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/data/taxid-9606_uniprot-reviewed.fasta"
+    "fasta": "/home/jovyan/data-store/CURE2025_Comparative_massSpec/taxid-9606_uniprot_wholeProteome.fasta"
   },
 
   "quant": {
@@ -37,23 +37,23 @@
     "lfq_settings": {
       "peak_scoring": "Hybrid",
       "integration": "Sum",
-      "spectral_angle": 0.7,
+      "spectral_angle": 0.5,
       "ppm_tolerance": 5.0,
       "mobility_pct_tolerance": 3.0
     }
   },
 
   "precursor_tol": {
-    "da": [-500, 100]
+    "ppm": [-20, 20]
   },
 
   "fragment_tol": {
     "ppm": [-10, 10]
   },
 
-  "precursor_charge": [2, 4],
+  "precursor_charge": [2, 6],
   "isotope_errors": [-1, 3],
-  "deisotope": false,
+  "deisotope": true,
   "chimera": false,
   "wide_window": false,
   "predict_rt": true,
@@ -67,14 +67,14 @@
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_1.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_1.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_2.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H3heavyN3light_2.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_2.mzML",
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H3heavyN3light_2.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_3.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_3.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H3heavyN3light_3.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_4.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_4.mzML",
 "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H3heavyN3light_4.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_5.mzML",
-"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_5.mzML"]
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H2heavyN2light_5.mzML",
+"/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/PXD005187/20141108_H1heavyN1light_5.mzML"]
 }
