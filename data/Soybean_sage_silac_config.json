@@ -22,16 +22,16 @@
     "max_variable_mods": 2,
     "decoy_tag": "rev_",
     "generate_decoys": true, 
-    "fasta": "/home/jovyan/data-store/CURE2025_Comparative_massSpec/taxid-3847_uniprot-reviewed.fasta"
+    "fasta": "/home/jovyan/data-store/home/shared/NCEMS/CURE-2025/Comparative_massSpec/data/taxid-3847_uniprot-reviewed.fasta"
   },
 
   "quant": {
-    "tmt": "null",
+    "tmt": null,
     "tmt_settings": {
       "level": 2,
-      "sn": "false"
+      "sn": false
     },
-    "lfq": "true",
+    "lfq": true,
     "lfq_settings": {
       "peak_scoring": "Hybrid",
       "integration": "Sum",
