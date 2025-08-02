@@ -1,0 +1,34 @@
+name: mass_spec_proteomics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core Python and scientific computing
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  
+  # Data visualization
+  - matplotlib
+  - seaborn
+  
+  # Jupyter notebook support
+  - jupyter
+  - ipykernel
+  - ipython
+  
+  # Statistical analysis
+  - statsmodels
+  
+  # Bioinformatics tools
+  - wget
+  
+  # Additional utilities
+  - glob2
+  
+  # Install remaining packages via pip
+  - pip
+  - pip:
+    - sage-proteomics  # SAGE proteomics search engine (if available via pip)
