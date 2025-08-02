@@ -40,10 +40,8 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
 1. After successful login, you’ll be on the CyVerse [Services](https://user.cyverse.org/services) page.
 
 ![images/services_page.png](images/services_page.png)
-2. In the *My Services* part of the page find and click **“Discovery Environment”**.
-   * If you don’t see it immediately, scroll down a little.
-
-3. The Discovery Environment interface will load a sub window highlighting its key features. Click the `Luanch` button in the upper right corner to go to the Discovery Environment. 
+2. In the *My Services* part of the page find and click **“Discovery Environment”**.  
+3. The Discovery Environment interface will load a sub window highlighting its key features. Click the `Luanch` button in the upper right corner to go to the Discovery Environment.  
     * This is where you can browse your data, run analyses, and launch apps.
 
 ![images/DE_keyfeatures.png](images/DE_keyfeatures.png)
@@ -75,14 +73,13 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
     * This will take a min or two to launch initially. 
     * If you are not directly launched into the session and instead brought to a summary page of the analysis, click the `Go to Analysis` button at the top of the page.    
   
-![images/Jupyter_config3.png](images/Jupyter_config3.png)  
-
+![images/Jupyter_config3.png](images/Jupyter_config3.png)   
 7. Your inital session view will contain a file browser on your left and a launcher area on the right. 
+
 ![images/inital_session_view.png](images/inital_session_view.png)
-
 8. Click the terminal icon in the launcher area to open up a command line interface. 
-![images/terminal_open.png](images/terminal_open.png)
 
+![images/terminal_open.png](images/terminal_open.png)
 9. Enter the following commands into the shell. 
 ```bash
 cd /home/jovyan/data-store/
@@ -100,7 +97,6 @@ conda env create -f src/data/environment.yml
 conda activate mass_spec_proteomics
 ```
 ![images/terminal_clone_repo_setup.png](images/terminal_clone_repo_setup.png)
-
 10. Navigate to the Jupyter note book called `Processing_Mass_Spectrometry_Proteomics_Data.ipynb` in the `CURE2025_Comparative_massSpec/src/data/` directory using the file browser on the left hand side of the session window. Double click the notebook to open it and you should see a screen like below. 
 
 ![images/final_notebook_open.png](images/final_notebook_open.png)
