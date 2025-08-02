@@ -25,7 +25,7 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
 
 ## Getting Started with CyVerse: Accessing the Discovery Environment & Launching JupyterLab
 
-### 1. **Log in to CyVerse**
+### **Log in to CyVerse**
 
 1. Open a web browser and go to: `https://user.cyverse.org`
    *(You can tell them to bookmark it.)*
@@ -35,7 +35,7 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
    * If this is your first time, you may need to activate your account via the email CyVerse sent.
    * If prompted, complete any multi-factor authentication (MFA) steps (e.g., one-time code or Duo) depending on your institution’s setup.
 
-### 2. **Navigate to the Discovery Environment**
+### **Navigate to the Discovery Environment**
 
 1. After successful login, you’ll be on the CyVerse [Services](https://user.cyverse.org/services) page.
 
@@ -48,7 +48,7 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
 
 ![images/Resource_usage_dashboard.png](images/Resource_usage_dashboard.png)
 
-### 3. **Locate and Launch the JupyterLab\_Datascience\_analysis1 App**
+### **Locate and Launch the JupyterLab Datascience App**
 
 1. Inside the Discovery Environment, take some time too look at the Resource Usage dashboard. 
     * This tracks how much storage and compute power you have used. 
@@ -74,13 +74,14 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
     * If you are not directly launched into the session and instead brought to a summary page of the analysis, click the `Go to Analysis` button at the top of the page.    
   
 ![images/Jupyter_config3.png](images/Jupyter_config3.png)   
-7. Your inital session view will contain a file browser on your left and a launcher area on the right. 
+### **Setting up the Session Environment and Fetching the GitHub repo**
+1. Your inital session view will contain a file browser on your left and a launcher area on the right. 
 
 ![images/inital_session_view.png](images/inital_session_view.png)
-8. Click the terminal icon in the launcher area to open up a command line interface. 
+2. Click the terminal icon in the launcher area to open up a command line interface. 
 
 ![images/terminal_open.png](images/terminal_open.png)
-9. Enter the following commands into the shell. 
+3. Enter the following commands into the shell. 
 ```bash
 cd /home/jovyan/data-store/
 
@@ -97,10 +98,11 @@ conda env create -f src/data/environment.yml
 conda activate mass_spec_proteomics
 ```
 ![images/terminal_clone_repo_setup.png](images/terminal_clone_repo_setup.png)
-10. Navigate to the Jupyter note book called `Processing_Mass_Spectrometry_Proteomics_Data.ipynb` in the `CURE2025_Comparative_massSpec/src/data/` directory using the file browser on the left hand side of the session window. Double click the notebook to open it and you should see a screen like below. 
+4. Navigate to the Jupyter note book called `Processing_Mass_Spectrometry_Proteomics_Data.ipynb` in the `CURE2025_Comparative_massSpec/src/data/` directory using the file browser on the left hand side of the session window. Double click the notebook to open it and you should see a screen like below. 
 
 ![images/final_notebook_open.png](images/final_notebook_open.png)
 
+You are now able to interact with the tutorial notebook! It is suggested if you have not used Jupyter notebooks before to review the breif summary of how to use them below.  
 ## Jupyter Notebook Tutorial
 
 ### Getting Started with Jupyter
