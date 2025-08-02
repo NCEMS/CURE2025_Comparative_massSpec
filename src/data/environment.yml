@@ -24,11 +24,10 @@ dependencies:
   
   # Bioinformatics tools
   - wget
+  - sage-proteomics  # SAGE proteomics search engine
   
   # Additional utilities
   - glob2
   
   # Install remaining packages via pip
   - pip
-  - pip:
-    - sage-proteomics  # SAGE proteomics search engine (if available via pip)
