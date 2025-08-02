@@ -53,6 +53,11 @@ The notebook uses SAGE for proteomics analysis. If you want to run the SAGE port
 
 ### Step 4: Launch Jupyter Notebook
 
+If you are on CyVerse:
+1. Open the file browser denoted by the folder icon on the upper left corner. 
+2. Navigate to the following directory `src/data/` and then double click the jupyter notebook named `Processing_Mass_Spectrometry_Proteomics_Data.ipynb`.  
+
+If you are on a command line:
 ```bash
 # Make sure the environment is activated
 conda activate mass_spec_proteomics
