@@ -20,19 +20,76 @@ This repository contains a comprehensive Jupyter notebook for **Processing Mass 
 - Basic knowledge of Python programming
 - Understanding of biological concepts (proteins, enzymes, cellular processes)
 - Familiarity with command-line operations (helpful but not required)
+- A CyVerse account ([Sign-up here](https://user.cyverse.org/signup))
+- A GitHub account ([Sign-up here](https://github.com/))
 
-## Environment Setup
+## Getting Started with CyVerse: Accessing the Discovery Environment & Launching JupyterLab
 
-### Step 1: Install Conda/Miniconda
+### 1. **Log in to CyVerse**
 
-If you don't have conda installed, download and install Miniconda from:
-https://docs.conda.io/en/latest/miniconda.html
+1. Open a web browser and go to: `https://user.cyverse.org`
+   *(You can tell them to bookmark it.)*
+2. Click **“Log In”**.
+3. Authenticate using your CyVerse credentials.
 
-### Step 2: Create the Conda Environment
+   * If this is your first time, you may need to activate your account via the email CyVerse sent.
+   * If prompted, complete any multi-factor authentication (MFA) steps (e.g., one-time code or Duo) depending on your institution’s setup.
 
-Navigate to the repository directory and create the environment using the provided environment file:
+### 2. **Navigate to the Discovery Environment**
 
+1. After successful login, you’ll be on the CyVerse [Services](https://user.cyverse.org/services) page.
+
+![images/services_page.png](images/services_page.png)
+2. In the *My Services* part of the page find and click **“Discovery Environment”**.
+   * If you don’t see it immediately, scroll down a little.
+
+3. The Discovery Environment interface will load a sub window highlighting its key features. Click the `Luanch` button in the upper right corner to go to the Discovery Environment. 
+    * This is where you can browse your data, run analyses, and launch apps.
+
+![images/DE_keyfeatures.png](images/DE_keyfeatures.png)
+
+![images/Resource_usage_dashboard.png](images/Resource_usage_dashboard.png)
+
+### 3. **Locate and Launch the JupyterLab\_Datascience\_analysis1 App**
+
+1. Inside the Discovery Environment, take some time too look at the Resource Usage dashboard. 
+    * This tracks how much storage and compute power you have used. 
+2. Go to the task bar on the left side of the screen and click the Apps icon (a square made of 9 smaller squares).
+    * This will open up the *Featured Apps* list where you can choose popular Applications. 
+
+![images/featured_apps.png](images/featured_apps.png)
+  
+3. Look for the app called `JupyterLab Datascience` and click it. 
+    * This will launch a dashboard to get some configuration information from you before starting the session on the HPC. 
+
+4. The *Analysis info* section can be left as is. Click Next -->  
+
+![images/Jupyter_config1.png](images/Jupyter_config1.png)
+5. The *Advanced settings* section select the following:
+    * CPU Cores = 4
+    * Minimum Memory = 32 GiB
+    * Minimum Disk Space = 64 Gib  
+
+![images/Jupyter_config2.png](images/Jupyter_config2.png)
+6. On the *Review and Launch* Click Launch Analysis -->
+    * This will take a min or two to launch initially. 
+    * If you are not directly launched into the session and instead brought to a summary page of the analysis, click the `Go to Analysis` button at the top of the page.    
+  
+![images/Jupyter_config3.png](images/Jupyter_config3.png)  
+
+7. Your inital session view will contain a file browser on your left and a launcher area on the right. 
+![images/inital_session_view.png](images/inital_session_view.png)
+
+8. Click the terminal icon in the launcher area to open up a command line interface. 
+![images/terminal_open.png](images/terminal_open.png)
+
+9. Enter the following commands into the shell. 
 ```bash
+cd /home/jovyan/data-store/
+
+# Clone the github repository
+git clone https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
+
 # Navigate to the project directory
 cd CURE2025_Comparative_massSpec
 
@@ -42,31 +99,11 @@ conda env create -f src/data/environment.yml
 # Activate the environment
 conda activate mass_spec_proteomics
 ```
+![images/terminal_clone_repo_setup.png](images/terminal_clone_repo_setup.png)
 
-### Step 3: Install SAGE (Optional)
+10. Navigate to the Jupyter note book called `Processing_Mass_Spectrometry_Proteomics_Data.ipynb` in the `CURE2025_Comparative_massSpec/src/data/` directory using the file browser on the left hand side of the session window. Double click the notebook to open it and you should see a screen like below. 
 
-The notebook uses SAGE for proteomics analysis. If you want to run the SAGE portions:
-
-1. Download SAGE from: https://github.com/lazear/sage
-2. Follow the installation instructions for your operating system
-3. Ensure SAGE is available in your system PATH
-
-### Step 4: Launch Jupyter Notebook
-
-If you are on CyVerse:
-1. Open the file browser denoted by the folder icon on the upper left corner. 
-2. Navigate to the following directory `src/data/` and then double click the jupyter notebook named `Processing_Mass_Spectrometry_Proteomics_Data.ipynb`.  
-
-If you are on a command line:
-```bash
-# Make sure the environment is activated
-conda activate mass_spec_proteomics
-
-# Start Jupyter notebook
-jupyter notebook
-```
-
-This will open your default web browser with the Jupyter interface.
+![images/final_notebook_open.png](images/final_notebook_open.png)
 
 ## Jupyter Notebook Tutorial
 
