@@ -1,2 +1,3 @@
-data/Human_SAGE_results
-data/Soybean_SAGE_results
+data/Human_SAGE_results/results.sage.tsv
+data/Soybean_SAGE_results/results.sage.tsv
+data/cyverse_data
