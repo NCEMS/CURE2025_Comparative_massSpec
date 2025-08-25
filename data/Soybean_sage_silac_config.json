@@ -26,7 +26,7 @@
   },
 
   "quant": {
-    "lfq": "true",
+    "lfq": true,
     "lfq_settings": {
       "peak_scoring": "Hybrid",
       "integration": "Sum",
