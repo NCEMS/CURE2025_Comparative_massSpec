@@ -12,7 +12,7 @@ def find_sage_files(directory):
         print(fname)
         if fname.endswith('lfq.tsv'):
             lfq_file = os.path.join(directory, fname)
-        elif fname.endswith('results.sage.tsv'):
+        elif fname.endswith('slim_results.sage.tsv'):
             results_file = os.path.join(directory, fname)
     return lfq_file, results_file
 ################################################

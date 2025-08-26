@@ -15,7 +15,17 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - Statistical analysis of differential protein expression
 - Data visualization and interpretation of proteomics results
 
+### Materials
+
+- [documents/MassSpec_TheoryReview.pdf](documents/MassSpec_TheoryReview.pdf): An overview of mass spectrometry in proteomics.  
+- [documents/ProjectOutline.pdf](documents/ProjectOutline.pdf): The project outline containing the key milestones and questions to answer. 
+- [Soybean_SAGE_results/final_results.csv](data/Soybean_SAGE_results/final_results.csv): The processed mass spec data for the Soybean dataset. 
+- [Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
+- [Human_SAGE_results/final_results.csv](data/Human_SAGE_results/final_results.csv): The processed mass spec data for the Human dataset. 
+- [Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. [In Progress] 
 ---
+
+
 
 ## Setting up your local system  
 
