@@ -21,7 +21,7 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - [documents/ProjectOutline.pdf](documents/ProjectOutline.pdf): The project outline containing the key milestones and questions to answer. 
 - [Soybean_SAGE_results/final_results.csv](data/Soybean_SAGE_results/final_results.csv): The processed mass spec data for the Soybean dataset. 
 - [Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
-- [Human_SAGE_results/final_results.csv](data/Human_SAGE_results/final_results.csv): The processed mass spec data for the Human dataset. 
+- Human_SAGE_results/final_results.csv: The processed mass spec data for the Human dataset. [This dataset is not available through github]. 
 - [Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. [In Progress] 
 ---
 
