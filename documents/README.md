@@ -1,23 +1,25 @@
-# README — Open and Run a Jupyter Notebook in VS Code (Mac & Windows/WSL)
+# CURE2025_Comparative_massSpec
 
-This guide walks students through installing **Visual Studio Code**, the **Python** + **Jupyter** extensions, setting up **Python**, and launching your `.ipynb` notebook. Windows users will install and use **WSL (Windows Subsystem for Linux)** for a smoother, Linux-like experience.
+## Overview
+
+This repository contains a comprehensive Jupyter notebook for Processing Mass Spectrometry Proteomics Data. The notebook provides an in-depth tutorial on mass spectrometry fundamentals and hands-on analysis of proteomics datasets from two different organisms:
+
+- **Soybean (*Glycine max*)** - Label-free quantification (LFQ) analysis of phosphate stress response
+- **Human (*Homo sapiens*)** - SILAC-labeled analysis of hypoxia-induced pulmonary fibrosis
+
+### What You'll Learn
+
+- Fundamentals of mass spectrometry and proteomics workflows
+- How to process raw mass spectrometry data using SAGE (Spectral Alignment Guided Engine)
+- Peptide identification and protein quantification techniques
+- Statistical analysis of differential protein expression
+- Data visualization and interpretation of proteomics results
 
 ---
 
-## TL;DR (what students do)
+## Setting up your local system  
 
-1. **Install VS Code** and the **Python** and **Jupyter** extensions. ([Visual Studio Code][1])
-2. **Install Python** (macOS: from python.org; Windows: via WSL). ([Python.org][2])
-3. **Create a virtual environment** and **install Jupyter** (`pip install jupyter ipykernel`).
-4. **Open the course folder in VS Code** → open the `.ipynb` → **Select Kernel** (pick your venv) → **Run**.
-
----
-
-## What you’ll install
-
-* **Visual Studio Code** (editor) and extensions: **Python** + **Jupyter**. ([Visual Studio Code][1])
-* **Python 3.10+** (3.11+ recommended). ([Python.org][3])
-* **WSL** (Windows only) + **Ubuntu** distro, plus Python tools in WSL. ([Microsoft Learn][4])
+This guide walks students through installing Visual Studio Code, the Python + Jupyter extensions, setting up Python, and launching your `.ipynb` notebook. Windows users will install and use WSL (Windows Subsystem for Linux) for a smoother, Linux-like experience.
 
 ---
 
@@ -29,55 +31,59 @@ This guide walks students through installing **Visual Studio Code**, the **Pytho
 
 ### 2) Install the extensions
 
-Open VS Code → **Extensions** (left sidebar) → search and install:
+Open VS Code → Extensions (left sidebar) → search and install:
 
-* **Python** (Microsoft)
-* **Jupyter** (Microsoft)
+* Python (Microsoft)
+* Jupyter (Microsoft)
   These provide Notebook support and Python tooling. ([Visual Studio Code][5])
 
-### 3) Install Python
+### 3) Install Miniconda
 
-* Easiest: download the macOS installer from **python.org** and run it (ensure “Add to PATH” is enabled if prompted). After install, `python3 --version` in **Terminal** should show a recent 3.x. ([Python.org][2])
+* Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Follow the instructions to add conda to your PATH.
 
-### 4) Make a project folder and virtual environment
+### 4) Clone the course repository
 
-Open **Terminal** (Spotlight → “Terminal”) and run:
+Open Terminal and run:
 
 ```bash
-# replace "my-course" with your folder name
-mkdir -p ~/my-course && cd ~/my-course
-
-# create and activate a virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-
-# upgrade pip and install Jupyter + common basics
-python -m pip install -U pip
-pip install jupyter ipykernel
+git clone https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
+cd CURE2025_Comparative_massSpec
 ```
 
-> Optional (nice to have):
-> `python -m ipykernel install --user --name my-course --display-name "Python (my-course)"`
+This will create a folder called `CURE2025_Comparative_massSpec` containing all course materials and notebooks.
+
+### 5) Create the NCEMS conda environment
+
+In the same terminal window, run:
+
+```bash
+conda create -n NCEMS python=3.11
+conda activate NCEMS
+conda install jupyter ipykernel
+```
+
+> Optional:
+> `python -m ipykernel install --user --name NCEMS --display-name "Python (NCEMS)"`
 > This gives your kernel a friendly name in VS Code.
 
-### 5) Open the notebook and run it
+### 6) Open the notebook and run it
 
-* In VS Code: **File → Open Folder…** → select your project folder.
-* Open the `.ipynb`.
-* If prompted, click **Trust**.
-* Top-right of the notebook, click **Select Kernel** → choose your venv (or “Python (my-course)”).
-* Press **Run** ▷ on cells.
+* In VS Code: File → Open Folder… → select the `CURE2025_Comparative_massSpec` folder you cloned.
+* Open the notebook at `src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb`.
+* If prompted, click Trust.
+* Top-right of the notebook, click Select Kernel → choose your NCEMS environment.
+* Press Run ▷ on cells.
 
 **Troubleshooting (macOS)**
 
-* **No kernels found**: make sure your venv is activated and `pip install jupyter ipykernel` completed without errors.
-* **Wrong interpreter**: VS Code Status Bar → click the Python version → choose the interpreter from `.venv`. ([Visual Studio Code][5])
+* No kernels found: make sure your venv is activated and `pip install jupyter ipykernel` completed without errors.
+* Wrong interpreter: VS Code Status Bar → click the Python version → choose the interpreter from `.venv`. ([Visual Studio Code][5])
 
 ---
 
 ## Windows setup (with WSL — recommended)
 
-We’ll run Python in **Ubuntu on WSL**, and use VS Code’s **Remote – WSL** workflow.
+We’ll run Python in Ubuntu on WSL, and use VS Code’s Remote – WSL workflow.
 
 ### 1) Install VS Code (Windows)
 
@@ -85,147 +91,104 @@ Download and install VS Code (User Installer). Launch it once. ([Visual Studio C
 
 ### 2) Install WSL + Ubuntu
 
-Open **PowerShell as Administrator** and run:
+Open PowerShell as Administrator and run:
 
 ```powershell
 wsl --install
 ```
 
 * Restart when prompted.
-* On first launch of “Ubuntu”, create a **username** and **password**.
+* On first launch of “Ubuntu”, create a username and password.
 * Update packages:
 
 ```bash
 sudo apt update && sudo apt -y upgrade
 ```
 
-WSL defaults to **WSL 2** on current Windows; you can verify with `wsl -l -v`. ([Microsoft Learn][4])
+WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Microsoft Learn][4])
 
-### 3) Install Python tools inside Ubuntu (WSL)
+### 3) Install Miniconda inside Ubuntu (WSL)
 
 In the Ubuntu terminal:
 
 ```bash
-sudo apt install -y python3 python3-venv python3-pip
+# Download and install Miniconda (see https://docs.conda.io/en/latest/miniconda.html)
+# Follow the instructions to add conda to your PATH
 ```
 
-### 4) Install the VS Code extensions
+### 4) Clone the course repository
 
-Open VS Code (Windows) → **Extensions**:
+In the Ubuntu terminal, run:
 
-* **Remote – WSL** (Microsoft)
-* **Python** (Microsoft)
-* **Jupyter** (Microsoft)
+```bash
+git clone https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
+cd CURE2025_Comparative_massSpec
+```
+
+### 5) Install the VS Code extensions
+
+Open VS Code (Windows) → Extensions:
+
+* Remote – WSL (Microsoft)
+* Python (Microsoft)
+* Jupyter (Microsoft)
   This enables opening Linux folders and running Notebooks from WSL transparently. ([Visual Studio Code][6])
 
-### 5) Open the project folder in WSL
+### 6) Open the project folder in WSL
 
 Option A (from WSL terminal):
 
 ```bash
-# create a project folder (or cd into your cloned repo)
-mkdir -p ~/my-course && cd ~/my-course
-
 # launch VS Code connected to WSL in this folder
 code .
 ```
 
-Option B (from VS Code): Click the green remote button in the lower-left (><) → **WSL: Open Folder** → choose your Linux path (e.g., `/home/<you>/my-course`). ([Visual Studio Code][7])
+Option B (from VS Code): Click the green remote button in the lower-left (><) → WSL: Open Folder → choose your Linux path (e.g., `/home/<you>/CURE2025_Comparative_massSpec`). ([Visual Studio Code][7])
 
-### 6) Create a venv and install Jupyter (still inside WSL)
+### 7) Create the NCEMS conda environment and install Jupyter (inside WSL)
 
 In VS Code’s integrated terminal (it should say “WSL: Ubuntu” in the bottom-left):
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-
-python -m pip install -U pip
-pip install jupyter ipykernel
-python -m ipykernel install --user --name my-course --display-name "Python (my-course)"
+conda create -n NCEMS python=3.11
+conda activate NCEMS
+conda install jupyter ipykernel
+python -m ipykernel install --user --name NCEMS --display-name "Python (NCEMS)"
 ```
 
-### 7) Open and run the notebook
+### 8) Open and run the notebook
 
-* In VS Code (WSL window), open the `.ipynb`.
-* **Select Kernel** → choose **Python (my-course)** (or the `.venv` interpreter).
+* In VS Code (WSL window), open the notebook at `src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb`.
+* Select Kernel → choose Python (NCEMS) (your conda environment).
 * Run cells.
 
 **Troubleshooting (Windows/WSL)**
 
-* **`code .` not found**: Install the **Remote – WSL** extension and reopen your WSL terminal; the `code` command is added by the extension. ([Visual Studio Code][6])
-* **Notebook won’t run**: Confirm the **active kernel** is your WSL venv and that `jupyter` is installed there. ([Visual Studio Code][8])
-* **WSL version check**: `wsl -l -v`; use `wsl --set-version <Distro> 2` if needed. ([Microsoft Learn][4])
-
----
-
-## (Optional) Native Windows (without WSL)
-
-If you must run natively:
-
-1. Install **Python for Windows** from python.org (enable “Add Python to PATH”). ([Python.org][9])
-2. In **Command Prompt** (or PowerShell):
-
-```bat
-mkdir %USERPROFILE%\my-course
-cd %USERPROFILE%\my-course
-python -m venv .venv
-.\.venv\Scripts\activate
-python -m pip install -U pip
-pip install jupyter ipykernel
-python -m ipykernel install --user --name my-course --display-name "Python (my-course)"
-```
-
-3. Open the folder in VS Code, open `.ipynb`, **Select Kernel** → your venv. ([Visual Studio Code][5])
-
-> Note: WSL tends to be more consistent across student machines; prefer WSL unless you have a reason to stay native. ([Visual Studio Code][6])
-
----
-
-## How to launch the notebook (any OS)
-
-1. **Open the folder**, not just the file: **File → Open Folder…** (select the course folder).
-2. Open the `.ipynb`.
-3. **Select Kernel** (upper-right) → choose your venv (“Python (my-course)” or `.venv`).
-4. **Run All** or run cells one by one.
-5. If VS Code asks to **Trust the notebook**, click **Trust**.
-6. If you get a kernel error, verify `jupyter` and `ipykernel` are installed **in that environment**, and re-select the interpreter. ([Visual Studio Code][8])
-
----
-
-## Extension recap (what to search for in the Extensions view)
-
-* **Python** — Microsoft (`ms-python.python`)
-* **Jupyter** — Microsoft (`ms-toolsai.jupyter`)
-* (Optional) **Jupyter Renderers** for rich outputs (`ms-toolsai.jupyter-renderers`)
-* (Windows) **Remote – WSL** (`ms-vscode-remote.remote-wsl`)
-  Install and manage from the Extensions view (`Ctrl+Shift+X` / `⌘⇧X`). ([Visual Studio Code][10], [Visual Studio Marketplace][11])
+* `code .` not found: Install the Remote – WSL extension and reopen your WSL terminal; the `code` command is added by the extension. ([Visual Studio Code][6])
+* Notebook won’t run: Confirm the active kernel is your WSL venv and that `jupyter` is installed there. ([Visual Studio Code][8])
+* WSL version check: `wsl -l -v`; use `wsl --set-version <Distro> 2` if needed. ([Microsoft Learn][4])
 
 ---
 
 ## Tips
 
-* **Keep environments per project**: one venv per course folder avoids dependency conflicts.
-* **Use the Command Palette** (`Ctrl+Shift+P` / `⌘⇧P`):
+* Use a single conda environment per project: create and use the `NCEMS` environment for this course to avoid dependency conflicts.
+* Use the Command Palette (`Ctrl+Shift+P` / `⌘⇧P`):
 
-  * “**Python: Select Interpreter**” to switch venvs.
-  * “**Jupyter: Select Kernel**” for notebooks. ([Visual Studio Code][5])
-* **Autosave**: consider enabling **File → Auto Save** in VS Code.
-* **Git**: if you’re using Git, open the **folder** as a repo and commit your work regularly.
+  * “Python: Select Interpreter” to switch conda envs.
+  * “Jupyter: Select Kernel” for notebooks. ([Visual Studio Code][5])
+* Autosave: consider enabling File → Auto Save in VS Code.
+* Git: if you’re using Git, open the folder as a repo and commit your work regularly.
 
 ---
 
 ## References
 
-* **Download VS Code**; **Jupyter in VS Code**; **Python in VS Code**; **Extensions Marketplace**. ([Visual Studio Code][1])
-* **Install WSL / Use WSL with VS Code**. ([Microsoft Learn][4], [Visual Studio Code][6])
-* **Download Python** (macOS/Windows). ([Python.org][2])
+* Download VS Code; Jupyter in VS Code; Python in VS Code; Extensions Marketplace. ([Visual Studio Code][1])
+* Install WSL / Use WSL with VS Code. ([Microsoft Learn][4], [Visual Studio Code][6])
+* Download Python (macOS/Windows). ([Python.org][2])
 
 ---
-
-### (Instructor note)
-
-If you’re distributing a repo, add a short **`SETUP.md`** with the exact package list (or a `requirements.txt`) and remind students to **open the folder**, then **select the correct kernel** before running.
 
 [1]: https://code.visualstudio.com/download?utm_source=chatgpt.com "Download Visual Studio Code - Mac, Linux, Windows"
 [2]: https://www.python.org/downloads/?utm_source=chatgpt.com "Download Python"
