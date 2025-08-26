@@ -109,12 +109,7 @@ WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Mic
 
 ### 3) Install Miniconda inside Ubuntu (WSL)
 
-In the Ubuntu terminal:
-
-```bash
-# Download and install Miniconda (see https://docs.conda.io/en/latest/miniconda.html)
-# Follow the instructions to add conda to your PATH
-```
+* Download and install Miniconda for Linux from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Follow the instructions to add conda to your PATH. Make sure this is all done in the wsl terminal you opened in step (2).  
 
 ### 4) Clone the course repository
 
@@ -136,14 +131,40 @@ Open VS Code (Windows) → Extensions:
 
 ### 6) Open the project folder in WSL
 
-Option A (from WSL terminal):
+There are two main ways to open your project folder in WSL, depending on your workflow:
 
-```bash
-# launch VS Code connected to WSL in this folder
-code .
-```
+**Option A: From the WSL terminal**
 
-Option B (from VS Code): Click the green remote button in the lower-left (><) → WSL: Open Folder → choose your Linux path (e.g., `/home/<you>/CURE2025_Comparative_massSpec`). ([Visual Studio Code][7])
+1. Open your Ubuntu (WSL) terminal.
+2. Navigate to your project folder (if you haven't already):
+  ```bash
+  cd ~/CURE2025_Comparative_massSpec
+  ```
+3. Launch VS Code connected to WSL in this folder:
+  ```bash
+  code .
+  ```
+  This will open VS Code in Windows, but the workspace will be your Linux (WSL) environment. You should see "WSL: Ubuntu" in the bottom-left corner of VS Code.
+
+  > **Tip:** If you get a "command not found" error for `code`, make sure you have installed the Remote – WSL extension in VS Code and restarted your WSL terminal. ([Visual Studio Code][6])
+
+**Option B: From VS Code (Windows)**
+
+1. Open VS Code on Windows.
+2. Click the green remote button in the lower-left corner (><).
+3. Select "WSL: Open Folder".
+4. Browse to your Linux path, e.g., `/home/<your-username>/CURE2025_Comparative_massSpec`.
+5. Click "OK" to open the folder in a WSL session.
+
+  > **Note:** You may be prompted to install the VS Code server in WSL the first time you connect. Follow the prompts to complete setup.
+
+**Troubleshooting:**
+
+- If you do not see "WSL: Ubuntu" in the bottom-left, you may not be connected to WSL. Try reopening VS Code using `code .` from your WSL terminal.
+- If the folder does not appear, double-check your path and permissions in WSL.
+- If you cannot open the folder, ensure the Remote – WSL extension is installed and enabled in VS Code.
+
+Once the folder is open in VS Code (WSL), you can use the integrated terminal, run notebooks, and install packages directly in your Linux environment.
 
 ### 7) Create the NCEMS conda environment and install Jupyter (inside WSL)
 

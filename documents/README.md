@@ -109,12 +109,7 @@ WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Mic
 
 ### 3) Install Miniconda inside Ubuntu (WSL)
 
-In the Ubuntu terminal:
-
-```bash
-# Download and install Miniconda (see https://docs.conda.io/en/latest/miniconda.html)
-# Follow the instructions to add conda to your PATH
-```
+See the instruction on the Miniconda site: https://docs.conda.io/en/latest/miniconda.html
 
 ### 4) Clone the course repository
 
@@ -136,14 +131,7 @@ Open VS Code (Windows) → Extensions:
 
 ### 6) Open the project folder in WSL
 
-Option A (from WSL terminal):
-
-```bash
-# launch VS Code connected to WSL in this folder
-code .
-```
-
-Option B (from VS Code): Click the green remote button in the lower-left (><) → WSL: Open Folder → choose your Linux path (e.g., `/home/<you>/CURE2025_Comparative_massSpec`). ([Visual Studio Code][7])
+Click the green remote button in the lower-left (><) → WSL: Open Folder → choose your Linux path (e.g., `/home/<you>/CURE2025_Comparative_massSpec`). ([Visual Studio Code][7])
 
 ### 7) Create the NCEMS conda environment and install Jupyter (inside WSL)
 
