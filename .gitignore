@@ -2,3 +2,6 @@ data/Human_SAGE_results/results.sage.tsv
 data/Human_SAGE_results/final_results.csv
 data/Soybean_SAGE_results/results.sage.tsv
 data/cyverse_data
+data/Human_OpenMS_results/
+data/Soybean_OpenMS_results/
+data/PRIDE/
