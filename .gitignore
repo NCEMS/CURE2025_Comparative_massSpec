@@ -1,5 +1,9 @@
 data/Human_SAGE_results/results.sage.tsv
 data/Human_SAGE_results/final_results.csv
+
+data/taxid-3847_uniprot_wholeProteome_td.fasta
+data/taxid-9606_uniprot_wholeProteome_td.fasta
+
 data/Soybean_SAGE_results/results.sage.tsv
 data/cyverse_data
 data/Human_OpenMS_results/
