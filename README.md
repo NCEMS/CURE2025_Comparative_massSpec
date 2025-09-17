@@ -17,12 +17,12 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 
 ### Materials
 
-- [documents/MassSpec_TheoryReview.pdf](documents/MassSpec_TheoryReview.pdf): An overview of mass spectrometry in proteomics.  
-- [documents/ProjectOutline.pdf](documents/ProjectOutline.pdf): The project outline containing the key milestones and questions to answer. 
-- [Soybean_SAGE_results/final_results.csv](data/Soybean_SAGE_results/final_results.csv): The processed mass spec data for the Soybean dataset. 
-- [Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
-- Human_SAGE_results/final_results.csv: The processed mass spec data for the Human dataset. [This dataset is not available through github]. 
-- [Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. [In Progress] 
+- [MassSpec_TheoryReview.pdf](documents/MassSpec_TheoryReview.pdf): An overview of mass spectrometry in proteomics.  
+- [ProjectOutline.pdf](documents/ProjectOutline.pdf): The project outline containing the key milestones and questions to answer. 
+- [Soybean_msstats.csv](data/Soybean_msstats.csv): The processed mass spec data for the Soybean dataset. 
+- [Processing_SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
+- [Human_msstats.csv](data/Human_msstats.csv): The processed mass spec data for the Human dataset. 
+- [Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. [In Progress] 
 ---
 
 
