@@ -72,7 +72,8 @@ In the same terminal window, run:
 ```bash
 conda create -n NCEMS python=3.11
 conda activate NCEMS
-conda install jupyter ipykernel
+conda install jupyter ipykernel pandas matplotlib seaborn scipy statsmodels
+conda install -c conda-forge pyteomics
 ```
 
 > Optional:
@@ -83,10 +84,10 @@ conda install jupyter ipykernel
 
 * In VS Code: File → Open Folder… → select the `CURE2025_Comparative_massSpec` folder you cloned.
 * Open the notebook by entering the following on the command line: 
-```bash
-code src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb
-```  
-It may install a VS Code server or start the notebook in a different window.  
+  ```bash
+  code src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb
+  ```  
+  It may install a VS Code server or start the notebook in a different window.  
 * If prompted, click Trust.
 * Top-right of the notebook, click Select Kernel → choose your NCEMS environment.
 * Press Run ▷ on each cell in order to examine the data. 
@@ -190,8 +191,8 @@ In VS Code’s integrated terminal (it should say “WSL: Ubuntu” in the botto
 ```bash
 conda create -n NCEMS python=3.11
 conda activate NCEMS
-conda install jupyter ipykernel
-python -m ipykernel install --user --name NCEMS --display-name "Python (NCEMS)"
+conda install jupyter ipykernel pandas matplotlib seaborn scipy statsmodels
+conda install -c conda-forge pyteomics
 ```
 
 ### 8) Open and run the notebook
