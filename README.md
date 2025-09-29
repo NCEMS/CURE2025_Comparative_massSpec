@@ -59,7 +59,7 @@ Open VS Code → Extensions (left sidebar) → search and install:
 Open Terminal and run:
 
 ```bash
-git clone https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
+git clone -b StandAlone_v2.1.1 https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
 cd CURE2025_Comparative_massSpec
 ```
 
@@ -129,7 +129,7 @@ WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Mic
 In the Ubuntu terminal, run:
 
 ```bash
-git clone https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
+git clone -b StandAlone_v2.1.1 https://github.com/NCEMS/CURE2025_Comparative_massSpec.git
 cd CURE2025_Comparative_massSpec
 ```
 
