@@ -24,9 +24,9 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - [Human_msstats.csv](data/Human_msstats.csv): The processed mass spec data for the Human dataset. 
 - [Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. 
 
-All output files from either analysis can be found in the following directories: 
-[data/Soybean_processed/](data/Soybean_processed/)
-[data/Human_processed/](data/Human_processed/)
+All output files from either analysis can be found in the following directories:  
+[data/Soybean_processed/](data/Soybean_processed/)  
+[data/Human_processed/](data/Human_processed/)  
 
 ---
 
