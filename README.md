@@ -82,10 +82,14 @@ conda install jupyter ipykernel
 ### 6) Open the notebook and run it
 
 * In VS Code: File → Open Folder… → select the `CURE2025_Comparative_massSpec` folder you cloned.
-* Open the notebook at `src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb`.
+* Open the notebook by entering the following on the command line: 
+```bash
+code src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb
+```  
+It may install a VS Code server or start the notebook in a different window.  
 * If prompted, click Trust.
 * Top-right of the notebook, click Select Kernel → choose your NCEMS environment.
-* Press Run ▷ on cells.
+* Press Run ▷ on each cell in order to examine the data. 
 
 **Troubleshooting (macOS)**
 
@@ -192,9 +196,14 @@ python -m ipykernel install --user --name NCEMS --display-name "Python (NCEMS)"
 
 ### 8) Open and run the notebook
 
-* In VS Code (WSL window), open the notebook at `src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb`.
-* Select Kernel → choose Python (NCEMS) (your conda environment).
-* Run cells.
+* Open the notebook by entering the following on the command line: 
+```bash
+code src/data/Processing_SOYBEAN_directlfq_Mass_Spectrometry_Proteomics_Data.ipynb
+```  
+It may install a VS Code server or start the notebook in a different window.  
+* If prompted, click Trust.
+* Top-right of the notebook, click Select Kernel → choose your NCEMS environment.
+* Press Run ▷ on each cell in order to examine the data. 
 
 **Troubleshooting (Windows/WSL)**
 
