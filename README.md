@@ -30,6 +30,12 @@ All output files from either analysis can be found in the following directories:
 
 ---
 
+## Google Collab Usage
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/StandAlone_v2.1.1/src/data/GoogleCollab_StartHere.ipynb)
+
+---
+
 ## Setting up your local system  
 
 This guide walks students through installing Visual Studio Code, the Python + Jupyter extensions, setting up Python, and launching your `.ipynb` notebook. Windows users will install and use WSL (Windows Subsystem for Linux) for a smoother, Linux-like experience.
@@ -52,7 +58,12 @@ Open VS Code → Extensions (left sidebar) → search and install:
 
 ### 3) Install Miniconda
 
-* Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Follow the instructions to add conda to your PATH.
+* Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). You can do so in the command line by the following commands:   
+```bash
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh ./Miniconda3-latest-Linux-x86_64.sh
+```
 
 ### 4) Clone the course repository
 
@@ -112,7 +123,7 @@ Download and install VS Code (User Installer). Launch it once. ([Visual Studio C
 Open PowerShell as Administrator and run:
 
 ```powershell
-wsl --install
+wsl --install -d Ubuntu
 ```
 
 * Restart when prompted.
@@ -127,7 +138,12 @@ WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Mic
 
 ### 3) Install Miniconda inside Ubuntu (WSL)
 
-* Download and install Miniconda for Linux from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Follow the instructions to add conda to your PATH. Make sure this is all done in the wsl terminal you opened in step (2).  
+* Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). You can do so in the command line by the following commands:   
+```bash
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh ./Miniconda3-latest-Linux-x86_64.sh
+```
 
 ### 4) Clone the course repository
 
