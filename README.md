@@ -22,13 +22,13 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - [Soybean_msstats.csv](data/Soybean_msstats.csv): The processed mass spec data for the Soybean dataset. 
 - [Human_msstats.csv](data/Human_msstats.csv): The processed mass spec data for the Human dataset. 
 
-#### Analysis Jupyter Notebooks (For running on local laptop)
-- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
-- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. 
-
 #### Analysis Jupyter Notebooks (For running on Google Collab)
 - [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
 - [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+
+#### Analysis Jupyter Notebooks (For running on local laptop)
+- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb)
+- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb)
 
 #### Output files from analysis 
 - [data/Soybean_processed/](data/Soybean_processed/)  
@@ -37,10 +37,8 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 ---
 
 ## Google Collab Usage
-[![HUMAN](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
-[![SOYBEAN](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
+[![HUMAN](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+[![SOYBEAN](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
 
 ---
 
