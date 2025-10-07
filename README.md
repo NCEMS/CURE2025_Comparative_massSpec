@@ -23,8 +23,10 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - [Human_msstats.csv](data/Human_msstats.csv): The processed mass spec data for the Human dataset. 
 
 #### Analysis Jupyter Notebooks (For running on Google Collab)
-- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
-- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
+- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
 
 #### Analysis Jupyter Notebooks (For running on local laptop)
 - [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb)
@@ -36,13 +38,7 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 
 ---
 
-## Google Collab Usage
-[![HUMAN](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
-[![SOYBEAN](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
-
----
-
-## Setting up your local system  
+## Setting up your local system to run outside of Google Colab  
 
 This guide walks students through installing Visual Studio Code, the Python + Jupyter extensions, setting up Python, and launching your `.ipynb` notebook. Windows users will install and use WSL (Windows Subsystem for Linux) for a smoother, Linux-like experience.
 
