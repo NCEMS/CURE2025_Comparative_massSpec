@@ -31,8 +31,11 @@ All output files from either analysis can be found in the following directories:
 ---
 
 ## Google Collab Usage
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+[![HUMAN](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+[![SOYBEAN](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/NCEMS/CURE2025_Comparative_massSpec/blob/UndergradLevel/src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)  
+
 ---
 
 ## Setting up your local system  
