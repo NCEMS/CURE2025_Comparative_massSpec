@@ -4,14 +4,13 @@
 
 This repository contains a comprehensive Jupyter notebook for Processing Mass Spectrometry Proteomics Data. The notebook provides an in-depth tutorial on mass spectrometry fundamentals and hands-on analysis of proteomics datasets from two different organisms:
 
-- **Soybean (*Glycine max*)** - Label-free quantification (LFQ) analysis of phosphate stress response
-- **Human (*Homo sapiens*)** - SILAC-labeled analysis of hypoxia-induced pulmonary fibrosis
+- **Soybean (*Glycine max*)** - Label-free quantification (LFQ) analysis of phosphate stress response ([Cheng et al., 2021](https://doi.org/10.3390/ijms22020920))   
+- **Human (*Homo sapiens*)** - SILAC-labeled analysis of hypoxia-induced pulmonary fibrosis ([Kathiriya et al., 2017](https://doi.org/10.1038/cddiscovery.2017.10))
 
 ### What You'll Learn
 
 - Fundamentals of mass spectrometry and proteomics workflows
-- How to process raw mass spectrometry data using SAGE (Spectral Alignment Guided Engine)
-- Peptide identification and protein quantification techniques
+- Basic protein quantification techniques
 - Statistical analysis of differential protein expression
 - Data visualization and interpretation of proteomics results
 
