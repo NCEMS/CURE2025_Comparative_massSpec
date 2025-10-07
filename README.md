@@ -20,13 +20,19 @@ This repository contains a comprehensive Jupyter notebook for Processing Mass Sp
 - [MassSpec_TheoryReview.pdf](documents/MassSpec_TheoryReview.pdf): An overview of mass spectrometry in proteomics.  
 - [ProjectOutline_v2.1.pdf](documents/ProjectOutline_v2.1.pdf): The project outline containing the key milestones and questions to answer. 
 - [Soybean_msstats.csv](data/Soybean_msstats.csv): The processed mass spec data for the Soybean dataset. 
-- [Processing_SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
 - [Human_msstats.csv](data/Human_msstats.csv): The processed mass spec data for the Human dataset. 
-- [Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/Processing_HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. 
 
-All output files from either analysis can be found in the following directories:  
-[data/Soybean_processed/](data/Soybean_processed/)  
-[data/Human_processed/](data/Human_processed/)  
+#### Analysis Jupyter Notebooks (For running on local laptop)
+- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Soybean samples. 
+- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data.ipynb): Example notebook to analyze the Human samples. 
+
+#### Analysis Jupyter Notebooks (For running on Google Collab)
+- [SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/SOYBEAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+- [HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb](src/data/HUMAN_MSFragger_Mass_Spectrometry_Proteomics_Data_GoogleCollab.ipynb)
+
+#### Output files from analysis 
+- [data/Soybean_processed/](data/Soybean_processed/)  
+- [data/Human_processed/](data/Human_processed/)  
 
 ---
 
