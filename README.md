@@ -44,13 +44,13 @@ This guide walks students through installing Visual Studio Code, the Python + Ju
 
 ---
 
-## macOS setup
+### macOS setup
 
-### 1) Install VS Code
+#### 1) Install VS Code
 
 * Download and install VS Code for macOS. Launch it once. ([Visual Studio Code][1])
 
-### 2) Install the extensions
+#### 2) Install the extensions
 
 Open VS Code → Extensions (left sidebar) → search and install:
 
@@ -58,7 +58,7 @@ Open VS Code → Extensions (left sidebar) → search and install:
 * Jupyter (Microsoft)
   These provide Notebook support and Python tooling. ([Visual Studio Code][5])
 
-### 3) Install Miniconda
+#### 3) Install Miniconda
 
 * Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). You can do so in the command line by the following commands:   
 ```bash
@@ -67,7 +67,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-### 4) Clone the course repository
+#### 4) Clone the course repository
 
 Open Terminal and run:
 
@@ -78,7 +78,7 @@ cd CURE2025_Comparative_massSpec
 
 This will create a folder called `CURE2025_Comparative_massSpec` containing all course materials and notebooks.
 
-### 5) Create the NCEMS conda environment
+#### 5) Create the NCEMS conda environment
 
 In the same terminal window, run:
 
@@ -93,7 +93,7 @@ conda install -c conda-forge pyteomics
 > `python -m ipykernel install --user --name NCEMS --display-name "Python (NCEMS)"`
 > This gives your kernel a friendly name in VS Code.
 
-### 6) Open the notebook and run it
+#### 6) Open the notebook and run it
 
 * In VS Code: File → Open Folder… → select the `CURE2025_Comparative_massSpec` folder you cloned.
 * Open the notebook by entering the following on the command line: 
@@ -112,15 +112,15 @@ conda install -c conda-forge pyteomics
 
 ---
 
-## Windows setup (with WSL — recommended)
+### Windows setup (with WSL — recommended)
 
 We’ll run Python in Ubuntu on WSL, and use VS Code’s Remote – WSL workflow.
 
-### 1) Install VS Code (Windows)
+#### 1) Install VS Code (Windows)
 
 Download and install VS Code (User Installer). Launch it once. ([Visual Studio Code][1])
 
-### 2) Install WSL + Ubuntu
+#### 2) Install WSL + Ubuntu
 
 Open PowerShell as Administrator and run:
 
@@ -138,7 +138,7 @@ sudo apt update && sudo apt -y upgrade
 
 WSL defaults to WSL 2 on current Windows; you can verify with `wsl -l -v`. ([Microsoft Learn][4])
 
-### 3) Install Miniconda inside Ubuntu (WSL)
+#### 3) Install Miniconda inside Ubuntu (WSL)
 
 * Download and install Miniconda for macOS from [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). You can do so in the command line by the following commands:   
 ```bash
@@ -147,7 +147,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-### 4) Clone the course repository
+#### 4) Clone the course repository
 
 In the Ubuntu terminal, run:
 
@@ -156,7 +156,7 @@ git clone -b StandAlone_v2.1.1 https://github.com/NCEMS/CURE2025_Comparative_mas
 cd CURE2025_Comparative_massSpec
 ```
 
-### 5) Install the VS Code extensions
+#### 5) Install the VS Code extensions
 
 Open VS Code (Windows) → Extensions:
 
@@ -165,7 +165,7 @@ Open VS Code (Windows) → Extensions:
 * Jupyter (Microsoft)
   This enables opening Linux folders and running Notebooks from WSL transparently. ([Visual Studio Code][6])
 
-### 6) Open the project folder in WSL
+#### 6) Open the project folder in WSL
 
 There are two main ways to open your project folder in WSL, depending on your workflow:
 
@@ -202,7 +202,7 @@ There are two main ways to open your project folder in WSL, depending on your wo
 
 Once the folder is open in VS Code (WSL), you can use the integrated terminal, run notebooks, and install packages directly in your Linux environment.
 
-### 7) Create the NCEMS conda environment and install Jupyter (inside WSL)
+#### 7) Create the NCEMS conda environment and install Jupyter (inside WSL)
 
 In VS Code’s integrated terminal (it should say “WSL: Ubuntu” in the bottom-left):
 
@@ -213,7 +213,7 @@ conda install jupyter ipykernel pandas matplotlib seaborn scipy statsmodels
 conda install -c conda-forge pyteomics
 ```
 
-### 8) Open and run the notebook
+#### 8) Open and run the notebook
 
 * Open the notebook by entering the following on the command line: 
 ```bash
